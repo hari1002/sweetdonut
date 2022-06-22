@@ -92,9 +92,9 @@
 }
 
 #wrap > header > .visual > p {
-  position: absolute;
+  width: 100%;
   text-align: center;
-  left: 29%;
+  position: absolute;
   top: 200px;
   font-size: 60px;
   font-family: 'Noto Serif KR';
@@ -255,6 +255,41 @@
   transition: all 0.3s;
 }
 
+#wrap > section > .cont_scroll {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  margin-bottom: 200px;
+  background-image: url(./../images/스크롤도넛.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#wrap > section > .cont_scroll > .text {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 500px;
+}
+
+#wrap > section > .cont_scroll > .text > p {
+  font-size: 34px;
+  font-weight: 500;
+  font-family: 'Noto Serif KR';
+  color: #052763;
+}
+
+#wrap > section > .cont_scroll > .text > p:nth-child(1) {
+  position: absolute;
+  left: -50px;
+}
+
+#wrap > section > .cont_scroll > .text > p:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 55px;
+}
+
 #wrap > section > .store_notice {
   width: 100%;
   padding-bottom: 200px;
@@ -265,7 +300,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 350px;
+  width: 800px;
+  margin: 0 auto;
 }
 
 #wrap > section > .store_notice > .box > .illust_1 {
@@ -280,7 +316,7 @@
 
 #wrap > section > .store_notice > .box > .illust_2 {
   position: absolute;
-  right: 230px;
+  right: -120px;
   top: 270px;
   display: block;
   background-image: url(./../images/일러스트-도넛그림.2png.png);
@@ -455,6 +491,7 @@
 
 #wrap > footer {
   position: relative;
+  top: 830px;
   margin-top: 1300px;
   width: 100%;
   height: 235px;
